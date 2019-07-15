@@ -1,7 +1,30 @@
 # Keanu Reeves Clicky Game
-<img src="./public/images/clickygif.gif"/>
+<a href="https://uncbc-clickygame.herokuapp.com/" target="_blank"><img src="./public/images/clickygif.gif"/></a>
 
+## Overview
+A serverless memory game built using React. It uses the app's state to randomly shuffle the images during play. 
 
+Click all 12 images without repeating and win!
+
+You can play it here: https://andrewsclickygame.herokuapp.com/. 
+
+### Technologies Used:
+1. React js
+2. Bootstrap 4 for React
+
+### Downloading This Application
+To use this application:
+
+1. Clone this repo to your local computer
+2. Open the repo and execute the following in the bash terminal. Doing so should install the required packages/dependencies:
+```
+yarn install
+```
+3. Ready to play on your local? Try:
+```
+yarn start
+```
+### Enjoy!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
