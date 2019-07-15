@@ -1,5 +1,5 @@
 # Keanu Reeves Clicky Game
-<a href="https://uncbc-clickygame.herokuapp.com/" target="_blank"><img src="./public/images/clickygif.gif"/></a>
+<a href="https://andrewsclickygame.herokuapp.com/" target="_blank"><img src="./public/images/clickygif.gif"/></a>
 
 ## Overview
 A serverless memory game built using React. It uses the app's state to randomly shuffle the images during play. 
