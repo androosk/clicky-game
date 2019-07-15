@@ -1,3 +1,8 @@
+# Keanu Reeves Clicky Game
+<img src="./public/images/clickygame.gif"/>
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
