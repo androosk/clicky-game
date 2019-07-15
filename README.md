@@ -1,5 +1,5 @@
 # Keanu Reeves Clicky Game
-<img src="./public/images/clickygame.gif"/>
+<img src="./public/images/clickygif.gif"/>
 
 
 
