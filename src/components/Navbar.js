@@ -2,7 +2,7 @@ import React from 'react'
 import "./card.css"
 
 // deconstructed props
-const Navbar = ({ icon, title, score }) => {
+const Navbar = ({ icon, title, score, highScore }) => {
     return (
       <div>
       <nav className='navbar bg-danger'>
@@ -10,7 +10,7 @@ const Navbar = ({ icon, title, score }) => {
           <h1>
             <i className={icon} /> {title}
           </h1>
-          <h3 className="itemRight">Score: {score}</h3>
+          <h3 className="itemRight">Score: {score}  High Score: {highScore}</h3>
         </div>
       </nav>
         <h5 className="textcolor">This is a memory game. Click each picture only once to win!</h5>
@@ -22,6 +22,7 @@ Navbar.defaultProps = {
   title: "Keanu's Clicky Game!",
   icon: "fas fa-mouse-pointer",
   score: 0,
+  highScore: 0,
 };
 
 

@@ -5,14 +5,17 @@ import keanus from "./keanus.json"
 import GameCard from "./components/GameCard"
 
 class App extends Component {
+  
   constructor(){
     super()
     this.state = {
       keanus,
       selectedCards: [],
       score: 0,
+      highScore: 0,
     }
   }
+
   keanuCard = e => {
     // get click image value
     const currentKeanu = e.target.alt
@@ -21,6 +24,9 @@ class App extends Component {
 
     // check if image was previously selected - if so, reset game variables
     if(previouslySelected){
+      if (this.state.score > this.state.highScore){
+        this.setState({ highScore: this.state.score})
+      }
       this.setState({
         keanus: this.state.keanus.sort(function(a,b){
           return 0.5 - Math.random()
@@ -43,6 +49,9 @@ class App extends Component {
     }
     // check to see if player won
     if(this.state.score === 12){
+      if (this.state.score > this.state.highScore){
+        this.setState({ highScore: this.state.score})
+      }
       alert("You Win!")
       this.setState({
         keanus: this.state.keanus.sort(function(a,b){
@@ -56,7 +65,7 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Navbar score={this.state.score}/>
+        <Navbar score={this.state.score} highScore={this.state.highScore}/>
         <div className="container" style={{ marginTop: 50 }}>
           {this.state.keanus.map(keanus => (
             <GameCard
