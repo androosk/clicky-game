@@ -6,7 +6,7 @@ A serverless memory game built using React. It uses the app's state to randomly 
 
 Click all 12 images without repeating and win!
 
-You can play it here: https://andrewsclickygame.herokuapp.com/. 
+You can play it here: https://keanu-reeves-clicky-game.netlify.app/ 
 
 ### Technologies Used:
 1. React js
